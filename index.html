@@ -1,54 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>JS Bin</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
-    <div class="container">
-        <header class="main-header">
-            <div class="main-header__wrapper">
-                <span class="main-header__title">Product name</span>
-                <ul class="main-header__list">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </ul>
+<body class="page">
+    <main>
+
+        <header class="main-header-section">
+            <div class="container main-header__container">
+                <div class="main-header__wrapper">
+                    <h1 class="main-header__title">Product name</h1>
+                    <ul class="main-header__list">
+                        <li class="main-header__item">Put on this page information about your product</li>
+                        <li class="main-header__item">A detailed description of your product</li>
+                        <li class="main-header__item">Tell us about the advantages and merits</li>
+                        <li class="main-header__item">Associate the page with the payment</li>
+                    </ul>
+                </div>
+                <div class="main-header__photo"></div>
             </div>
-            <div class="main-header__photo"></div>
         </header>
-    </div>
-    <section class="product-description">
-        <article class="product-description__text">
 
-        </article>
-        <div class="product-description__photo"></div>
-    </section>
-    <section class="product-advantages">
-        <h2></h2>
-        <div class="product-advantages__wrapper">
-            <ul class="product-advantages__list">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <section class="section product-description-section">
+            <div class="container product-description__container">
+                <article class="product-description__text">
+                    <h2 class="product-description__title title">About your product</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illo impedit deserunt ad a vel,
+                        voluptates quaerat libero nulla hic.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum incidunt dignissimos blanditiis
+                        eum reprehenderit ullam quasi nobis quos ad numquam!</p>
+
+                </article>
+                <div class="product-description__photo"></div>
+            </div>
+        </section>
+        <section class="product-advantages-section section">
+            <div class="container">
+                <h2 class="product-advantages__title title">Dignity and pluses product</h2>
+                <div class="product-advantages__wrapper">
+                    <ul class="product-advantages__list">
+                        <li class="product-advantages__item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Distinctio saepe at reprehenderit
+                            odit vel quam.</li>
+                        <li class="product-advantages__item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Distinctio saepe at reprehenderit
+                            odit vel quam.</li>
+                        <li class="product-advantages__item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Distinctio saepe at reprehenderit
+                            odit vel quam.</li>
+                        <li class="product-advantages__item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Distinctio saepe at reprehenderit
+                            odit vel quam.</li>
+                        <li class="product-advantages__item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Distinctio saepe at reprehenderit
+                            odit vel quam.</li>
+                        <li class="product-advantages__item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Distinctio saepe at reprehenderit
+                            odit vel quam.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="screenshot-section section">
+            <div class="container">
+
+                <h2 class="screenshot__title title">Screenshots</h2>
+                <div class="screenshot__wrapper">
+                    <div class="screenshot__item">
+                        <div class="screenshot__photo"></div>
+                        <article class="screenshot__text">
+                            <h3 class="screenshot__text__title title">The description of the image</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis eaque hic debitis,
+                                laudantium quaerat.</p>
+                        </article>
+                    </div>
+                    <div class="screenshot__item">
+                        <div class="screenshot__photo"></div>
+                        <article class="screenshot__text">
+                            <h3 class="screenshot__text__title title">The description of the image</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis eaque hic debitis,
+                                laudantium quaerat.</p>
+                        </article>
+                    </div>
+                    <div class="screenshot__item">
+                        <div class="screenshot__photo"></div>
+                        <article class="screenshot__text">
+                            <h3 class="screenshot__text__title title">The description of the image</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis eaque hic debitis,
+                                laudantium quaerat.</p>
+                        </article>
+                    </div>
+                    <div class="screenshot__item">
+                        <div class="screenshot__photo"></div>
+                        <article class="screenshot__text">
+                            <h3 class="screenshot__text__title title">The description of the image</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis eaque hic debitis,
+                                laudantium quaerat.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section review-section">
+            <div class="container">
+                <h2 class="review-title title">Reviews</h2>
+                <div class="review__wrapper">
+                    <div class="review__item">
+                        <div class="review__item__photo"></div>
+                        <div class="review__item__text">
+                            <div class="review__item__text__wrapper">
+                                <figure class="figure">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                    quod adipisci
+                                    harum
+                                    quidem iusto nostrum necessitatibus debitis, reprehenderit commodi ipsam!</figure>
+                                <figcaption class="figcaption">Lourens S.</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__item">
+                        <div class="review__item__photo"></div>
+                        <div class="review__item__text">
+                            <div class="review__item__text__wrapper">
+                                <figure class="figure">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                    quod adipisci
+                                    harum
+                                    quidem iusto nostrum necessitatibus debitis, reprehenderit commodi ipsam!</figure>
+                                <figcaption class="figcaption">Lourens S.</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__item">
+                        <div class="review__item__photo"></div>
+                        <div class="review__item__text">
+                            <div class="review__item__text__wrapper">
+                                <figure class="figure">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                    quod adipisci
+                                    harum
+                                    quidem iusto nostrum necessitatibus debitis, reprehenderit commodi ipsam!</figure>
+                                <figcaption class="figcaption">Lourens S.</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__item">
+                        <div class="review__item__photo"></div>
+                        <div class="review__item__text">
+                            <div class="review__item__text__wrapper">
+                                <figure class="figure">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                    quod adipisci
+                                    harum
+                                    quidem iusto nostrum necessitatibus debitis, reprehenderit commodi ipsam!</figure>
+                                <figcaption class="figcaption">Lourens S.</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <section class="product-description">
-        <h2></h2>
-        <article class="product-description__text">
+        <div class="section offer-section">
+            <div class="container">
+                <h2 class="title offer__title">Buy it now</h2>
+                <div class="offer__wrapper">
+                    <div class="offer__item offer__item-standart">
+                        <h3 class="offer__item__title title">Standart</h3>
+                        <div class="offer__item__price-tag">
+                            <p class="offer__item__price-tag__text">100$</p>
+                        </div>
+                        <ol class="offer__item__list">
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                        </ol>
+                        <a href="#" class="offer__item__button">BUY</a>
+                    </div>
+                    <div class="offer__item offer__item-premium">
+                        <h3 class="offer__item__title title">Premium</h3>
+                        <div class="offer__item__price-tag">
+                            <p class="offer__item__price-tag__text">150$</p>
+                        </div>
+                        <ol class="offer__item__list">
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                        </ol>
+                        <a href="#" class="offer__item__button">BUY</a>
 
-        </article>
-        <div class="product-description__photo"></div>
-    </section>
+                    </div>
+                    <div class="offer__item offer__item-lux">
+                        <h3 class="offer__item__title title">Lux</h3>
+                        <div class="offer__item__price-tag">
+                            <p class="offer__item__price-tag__text">200$</p>
+                        </div>
+                        <ol class="offer__item__list">
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="offer__item__list__item">Lorem ipsum dolor sit amet.</li>
+                        </ol>
+                        <a href="#" class="offer__item__button">BUY</a>
 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
