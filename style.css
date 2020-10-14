@@ -22,7 +22,7 @@ body {
 
 .section {
   width: auto;
-  padding: 50px 396.5px;
+  padding: 50px;
 }
 
 .title {
@@ -35,44 +35,11 @@ body {
   text-align: center;
 }
 
-.button {
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-}
-
-.button:hover, .button:active {
-  background: #445161;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.button:focus {
-  outline-color: black;
-}
-
-input,
-textarea {
-  outline: none;
-}
-
-input:hover,
-textarea:hover {
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.main-header {
+.main-header-section {
   width: auto;
   max-height: 323px;
+  padding: 50px;
   background-color: #445162;
-}
-
-.main-header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .main-header__title {
@@ -98,6 +65,15 @@ textarea:hover {
   list-style: none;
 }
 
+.main-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .main-header__item {
   position: relative;
 }
@@ -113,35 +89,23 @@ textarea:hover {
   left: -35px;
 }
 
-.product-description .product-description__text-wrapper {
+.product-description__text-wrapper {
   width: 650px;
 }
 
 .main-header__photo {
+  background-color: #ffffff;
   width: 469px;
   height: 214px;
 }
 
-.product-description__video {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.product-description__video-wrapper {
+.product-description__photo {
+  background-color: #445162;
   width: 469px;
   height: 214px;
-  overflow: hidden;
-  position: relative;
 }
 
-.product-advantages {
+.product-advantages-section {
   background-color: #f5f5f5;
 }
 
@@ -174,6 +138,7 @@ textarea:hover {
 }
 
 .screenshot__photo {
+  background-color: #445162;
   width: 200px;
   height: 150px;
   margin: 0 15px 0 0;
@@ -215,7 +180,7 @@ textarea:hover {
           justify-content: space-between;
 }
 
-.review {
+.review-section {
   background-color: #f5f5f5;
 }
 
@@ -276,6 +241,7 @@ textarea:hover {
 }
 
 .review-item__photo {
+  background-color: #445162;
   border-radius: 50%;
   width: 75px;
   height: 75px;
@@ -369,10 +335,9 @@ textarea:hover {
   font-weight: 700;
   color: #445161;
   padding: 10px 0;
-  border: 1px solid #fff;
 }
 
-.footer {
+.footer-section {
   background-color: #445162;
   padding: 50px 0 0;
 }
@@ -380,6 +345,18 @@ textarea:hover {
 .footer__title {
   color: #ffffff;
   margin: 0 0 30px 0;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  min-height: 350px;
 }
 
 .footer__form ::-webkit-input-placeholder {
@@ -414,27 +391,6 @@ textarea:hover {
   color: #445162;
 }
 
-.footer__form-fieldset {
-  width: 500px;
-  min-height: 350px;
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-}
-
-.footer__form-item {
-  margin: 0 0 20px 0;
-  border-radius: 5px;
-  padding: 15px 10px;
-  border: none;
-  resize: none;
-  width: -webkit-fill-available;
-}
-
 .footer__wrapper {
   padding: 0px 250px 45px;
   display: -webkit-box;
@@ -443,6 +399,13 @@ textarea:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer__form-item {
+  margin: 0 0 20px 0;
+  border-radius: 5px;
+  padding: 15px 10px;
+  border: none;
 }
 
 .footer__submit-button {
@@ -461,7 +424,6 @@ textarea:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  border: 1px solid #fff;
 }
 
 .footer__contacts {
