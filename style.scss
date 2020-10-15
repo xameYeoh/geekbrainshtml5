@@ -17,8 +17,8 @@ body {
     color: #333333;
 }
 .section {
-    width: auto;
-    padding: 50px 396.5px;
+    min-width: 1280px;
+    padding: 50px;
 }
 
 .title {
@@ -53,7 +53,6 @@ textarea {
 }
 
 .main-header {
-    width: auto;
     max-height: 323px;
     background-color: #445162;
     &-container {
