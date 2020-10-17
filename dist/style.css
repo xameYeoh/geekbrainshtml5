@@ -20,7 +20,7 @@ body {
 }
 
 .section {
-  width: auto;
+  min-width: 1280px;
   padding: 50px;
 }
 
@@ -34,13 +34,35 @@ body {
   text-align: center;
 }
 
-.main-header-section {
-  width: auto;
-  max-height: 323px;
-  padding: 50px;
-  background-color: #445162;
+.button {
+  transition-duration: 0.2s;
+}
+.button:hover, .button:active {
+  background: #445161;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.button:focus {
+  outline-color: #000000;
 }
 
+input,
+textarea {
+  outline: none;
+}
+input:hover,
+textarea:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.main-header {
+  max-height: 323px;
+  background-color: #445162;
+}
+.main-header-container {
+  display: flex;
+  justify-content: space-between;
+}
 .main-header__title {
   margin: 0 0 51px 0;
   font-family: Arial;
@@ -51,7 +73,6 @@ body {
   text-align: left;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
 }
-
 .main-header__list {
   margin: 0;
   font-family: Arial;
@@ -63,12 +84,6 @@ body {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
   list-style: none;
 }
-
-.main-header__container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .main-header__item {
   position: relative;
 }
@@ -83,23 +98,33 @@ body {
   left: -35px;
 }
 
-.product-description__text-wrapper {
+.product-description .product-description__text-wrapper {
   width: 650px;
 }
 
 .main-header__photo {
-  background-color: #ffffff;
   width: 469px;
   height: 214px;
 }
 
-.product-description__photo {
-  background-color: #445162;
+.product-description__video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.product-description__video-wrapper {
   width: 469px;
   height: 214px;
+  overflow: hidden;
+  position: relative;
 }
 
-.product-advantages-section {
+.product-advantages {
   background-color: #f5f5f5;
 }
 
@@ -128,7 +153,6 @@ body {
 }
 
 .screenshot__photo {
-  background-color: #445162;
   width: 200px;
   height: 150px;
   margin: 0 15px 0 0;
@@ -161,7 +185,7 @@ body {
   justify-content: space-between;
 }
 
-.review-section {
+.review {
   background-color: #f5f5f5;
 }
 
@@ -206,7 +230,6 @@ body {
 }
 
 .review-item__photo {
-  background-color: #445162;
   border-radius: 50%;
   width: 75px;
   height: 75px;
@@ -279,21 +302,15 @@ body {
   font-weight: 700;
   color: #445161;
   padding: 10px 0;
+  border: 1px solid #fff;
 }
 
-.footer-section {
+.footer {
   background-color: #445162;
-  padding: 50px 0 0;
 }
 .footer__title {
   color: #ffffff;
   margin: 0 0 30px 0;
-}
-.footer__form {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  min-height: 350px;
 }
 .footer__form ::placeholder {
   font-family: Arial, Helvetica, sans-serif;
@@ -302,16 +319,28 @@ body {
   font-weight: 400;
   color: #445162;
 }
-.footer__wrapper {
-  padding: 0px 250px 45px;
-  display: flex;
-  justify-content: space-between;
+.footer__form-fieldset {
+  width: 500px;
+  min-height: 350px;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  border: none;
 }
 .footer__form-item {
   margin: 0 0 20px 0;
   border-radius: 5px;
   padding: 15px 10px;
   border: none;
+  resize: none;
+  width: -webkit-fill-available;
+}
+.footer__wrapper {
+  padding: 0px 250px 45px;
+  display: flex;
+  justify-content: space-between;
 }
 .footer__submit-button {
   font-size: 16px;
@@ -326,6 +355,7 @@ body {
   width: 140px;
   box-sizing: border-box;
   align-self: center;
+  border: 1px solid #fff;
 }
 .footer__contacts {
   font-size: 16px;
@@ -380,6 +410,7 @@ body {
   color: #ffffff;
 }
 .footer__copyright-line {
+  margin: 0 -50px -50px;
   font-size: 12px;
   font-family: "Arial";
   color: #445162;
