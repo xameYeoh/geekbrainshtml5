@@ -279,7 +279,6 @@ textarea {
 .footer {
     & {
         background-color: #445162;
-        padding: 50px 0 0;
     }
 
     &__title {
@@ -394,6 +393,7 @@ textarea {
     }
 
     &__copyright-line {
+        margin: 0 -50px -50px;
         font-size: 12px;
         font-family: "Arial";
         color: rgb(68, 81, 98);
