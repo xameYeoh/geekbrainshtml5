@@ -474,7 +474,7 @@ textarea:hover {
   color: #fff;
 }
 
-.footer__contacts-link:hover {
+.footer__contacts-link:hover, .footer__contacts-link:active {
   color: #d1d3d4;
 }
 
@@ -533,7 +533,7 @@ textarea:hover {
   color: #ffffff;
 }
 
-.footer__social-networks-link:hover {
+.footer__social-networks-link:hover, .footer__social-networks-link:active {
   color: #d1d3d4;
 }
 

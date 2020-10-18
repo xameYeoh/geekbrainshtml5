@@ -343,7 +343,8 @@ textarea {
         &-link {
             text-decoration: none;
             color: #fff;
-            &:hover {
+            &:hover,
+            &:active {
                 color: #d1d3d4;
             }
         }
@@ -399,7 +400,8 @@ textarea {
         letter-spacing: 0.025em;
         color: #ffffff;
 
-        &:hover {
+        &:hover,
+        &:active {
             color: #d1d3d4;
         }
     }

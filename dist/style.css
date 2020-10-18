@@ -367,7 +367,7 @@ textarea:hover {
   text-decoration: none;
   color: #fff;
 }
-.footer__contacts-link:hover {
+.footer__contacts-link:hover, .footer__contacts-link:active {
   color: #d1d3d4;
 }
 .footer__contacts-list {
@@ -416,7 +416,7 @@ textarea:hover {
   letter-spacing: 0.025em;
   color: #ffffff;
 }
-.footer__social-networks-link:hover {
+.footer__social-networks-link:hover, .footer__social-networks-link:active {
   color: #d1d3d4;
 }
 .footer__copyright-line {
