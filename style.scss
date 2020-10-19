@@ -340,11 +340,20 @@ textarea {
         line-height: 24px;
         font-weight: 400;
         color: #ffffff;
+        &-link {
+            text-decoration: none;
+            color: #fff;
+            &:hover,
+            &:active {
+                color: #d1d3d4;
+            }
+        }
     }
 
     &__contacts-list {
         margin: 0;
         list-style: none;
+
         .skype::before {
             background: url(images/skype-icon.png);
         }
@@ -390,6 +399,11 @@ textarea {
         font-weight: 400;
         letter-spacing: 0.025em;
         color: #ffffff;
+
+        &:hover,
+        &:active {
+            color: #d1d3d4;
+        }
     }
 
     &__copyright-line {
