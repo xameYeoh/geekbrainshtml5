@@ -1,0 +1,11 @@
+<svg id="plus_icon" data-name="plus icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #445161;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="32" height="32"/>
+  <image x="6" y="6" width="20" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAV0lEQVQ4jWP8//8/AwHwgYGBgR+q5CMDA4MAPuXEGIiugBGfYiZCppEKRg0chAayYEkWhAA+9R9B6ZBUA/ECmoThRyqa93E0640aSCMDkdMp/jTLwMAAAEY6F81v1KPpAAAAAElFTkSuQmCC"/>
+</svg>
